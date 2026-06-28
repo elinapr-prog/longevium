@@ -186,7 +186,7 @@ h1 {
     linear-gradient(155deg, #d7e0cc 0%, #c3ceb2 55%, #aab896 100%);
 }
 .hero-media { position: absolute; inset: 0; z-index: 0; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 72% 22%; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; }
 /* scrim for legibility over the photo */
 .hero::after {
   content: "";
