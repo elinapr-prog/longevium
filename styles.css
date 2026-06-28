@@ -42,14 +42,10 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--frame-line);
 }
-.logo, .frame-logo {
-  font-weight: 500;
-  font-size: 1.35rem;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  text-decoration: none;
-}
-.logo span, .frame-logo span { color: var(--green); }
+.logo { display: inline-flex; align-items: center; text-decoration: none; }
+.logo img { height: 22px; width: auto; display: block; }
+.frame-logo { height: 20px; width: auto; display: block; opacity: 0.9; }
+.site-footer .frame-logo { height: 26px; margin: 0 auto 14px; }
 .nav-links {
   display: flex;
   align-items: center;
@@ -491,12 +487,24 @@ h1 {
   color: var(--ink-faint);
 }
 .cert-seal {
-  font-size: 0.72rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: var(--green-deep);
-  line-height: 1.7;
+  line-height: 1.6;
   text-align: center;
+}
+.cert-seal img { width: 76px; height: auto; opacity: 0.92; }
+.cert-signature {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 auto -6px;
+  opacity: 0.8;
 }
 
 /* ===== FOOTER ===== */
@@ -505,7 +513,6 @@ h1 {
   padding: 50px 24px 60px;
   border-top: 1px solid var(--frame-line);
 }
-.site-footer .frame-logo { display: inline-block; margin-bottom: 12px; }
 .site-footer p {
   font-size: 0.74rem;
   letter-spacing: 0.16em;
